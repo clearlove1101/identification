@@ -1,0 +1,6 @@
+torch==2.3.0+cu121
+ultralytics==8.1.31
+matplotlib==3.7.2
+numpy==1.26.4
+cv2==4.9.0
+
