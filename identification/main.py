@@ -290,6 +290,7 @@ def get_person_images(pth, output_dir):
     persons = torch.tensor(persons, dtype=torch.float, device=torch.device("cpu"))
 
     rst = reid_model(persons)
+    rst = (rst > 0.5).int()
     print(rst)
 
     return
